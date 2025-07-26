@@ -1,0 +1,12 @@
+diff -urpN linux-6.15.7.orig/net/bluetooth/hci_sync.c linux-6.15.7/net/bluetooth/hci_sync.c
+--- linux-6.15.7.orig/net/bluetooth/hci_sync.c	2025-07-25 21:32:04.088796199 -0400
++++ linux-6.15.7/net/bluetooth/hci_sync.c	2025-07-26 00:03:09.827219049 -0400
+@@ -3961,7 +3961,7 @@ static const struct hci_init_stage hci_i
+ 	/* HCI_OP_READ_INQ_RSP_TX_POWER */
+ 	HCI_INIT(hci_read_inq_rsp_tx_power_sync),
+ 	/* HCI_OP_READ_LOCAL_EXT_FEATURES */
+-	HCI_INIT(hci_read_local_ext_features_1_sync),
++	/* HCI_INIT(hci_read_local_ext_features_1_sync), */
+ 	/* HCI_OP_WRITE_AUTH_ENABLE */
+ 	HCI_INIT(hci_write_auth_enable_sync),
+ 	{}
